@@ -1,0 +1,62 @@
+
+# Secrets and environment variables
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+credentials/
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Generated storybooks and local outputs
+outputs/
+output/
+generated/
+assets/generated/
+
+# Large model files
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.gguf
+*.onnx
+
+# Logs and temporary files
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local virtual environments
+.venv/
+venv/
+
+# Generated outputs
+outputs/
+generated/
+
+# Local secrets
+.env
+.env.*
+!.env.example

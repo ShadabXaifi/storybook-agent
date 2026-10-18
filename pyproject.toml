@@ -1,0 +1,33 @@
+[project]
+name = "storybook-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "ShadabXaifi"}
+]
+requires-python = ">=3.14"
+dependencies = [
+    "google-genai>=2.31.0",
+    "langchain>=1.4.6",
+    "langchain-google-genai>=4.4.2",
+    "langgraph>=1.2.15",
+    "pillow>=12.3.0",
+    "pydantic>=2.14.1",
+    "python-dotenv>=1.2.4",
+    "reportlab>=5.0.1",
+    "requests>=2.34.2",
+    "streamlit>=1.66.0",
+]
+
+[project.scripts]
+storybook-agent = "storybook_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.12.1,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
